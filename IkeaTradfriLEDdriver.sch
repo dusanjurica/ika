@@ -261,4 +261,140 @@ F 3 "" H 4500 2700 50  0001 C CNN
 	1    4500 2700
 	-1   0    0    1   
 $EndComp
+$Comp
+L Regulator_Linear:LM1117-3.3 U?
+U 1 1 5C75B3A7
+P 1950 4500
+F 0 "U?" H 1950 4742 50  0000 C CNN
+F 1 "LM1117-3.3" H 1950 4651 50  0000 C CNN
+F 2 "" H 1950 4500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 1950 4500 50  0001 C CNN
+	1    1950 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5C75B47A
+P 1050 4350
+F 0 "#PWR?" H 1050 4200 50  0001 C CNN
+F 1 "+12V" H 1065 4523 50  0000 C CNN
+F 2 "" H 1050 4350 50  0001 C CNN
+F 3 "" H 1050 4350 50  0001 C CNN
+	1    1050 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5C75B500
+P 2850 4350
+F 0 "#PWR?" H 2850 4200 50  0001 C CNN
+F 1 "+3.3V" H 2865 4523 50  0000 C CNN
+F 2 "" H 2850 4350 50  0001 C CNN
+F 3 "" H 2850 4350 50  0001 C CNN
+	1    2850 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C75B55C
+P 1400 4750
+F 0 "C?" H 1515 4796 50  0000 L CNN
+F 1 "47n" H 1515 4705 50  0000 L CNN
+F 2 "" H 1438 4600 50  0001 C CNN
+F 3 "~" H 1400 4750 50  0001 C CNN
+	1    1400 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C75B5D1
+P 2500 4750
+F 0 "C?" H 2615 4796 50  0000 L CNN
+F 1 "47n" H 2615 4705 50  0000 L CNN
+F 2 "" H 2538 4600 50  0001 C CNN
+F 3 "~" H 2500 4750 50  0001 C CNN
+	1    2500 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5C75B961
+P 1050 4750
+F 0 "C?" H 1168 4796 50  0000 L CNN
+F 1 "10u" H 1168 4705 50  0000 L CNN
+F 2 "" H 1088 4600 50  0001 C CNN
+F 3 "~" H 1050 4750 50  0001 C CNN
+	1    1050 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5C75BADC
+P 2850 4750
+F 0 "C?" H 2968 4796 50  0000 L CNN
+F 1 "100u" H 2968 4705 50  0000 L CNN
+F 2 "" H 2888 4600 50  0001 C CNN
+F 3 "~" H 2850 4750 50  0001 C CNN
+	1    2850 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 4350 1050 4500
+Wire Wire Line
+	1400 4600 1400 4500
+Wire Wire Line
+	1400 4500 1050 4500
+Connection ~ 1050 4500
+Wire Wire Line
+	1050 4500 1050 4600
+Wire Wire Line
+	1400 4500 1650 4500
+Connection ~ 1400 4500
+Wire Wire Line
+	2250 4500 2500 4500
+Wire Wire Line
+	2500 4500 2500 4600
+Wire Wire Line
+	2500 4500 2850 4500
+Wire Wire Line
+	2850 4500 2850 4600
+Connection ~ 2500 4500
+Wire Wire Line
+	2850 4500 2850 4350
+Connection ~ 2850 4500
+Wire Wire Line
+	1050 4900 1050 5000
+Wire Wire Line
+	1050 5000 1400 5000
+Wire Wire Line
+	2850 5000 2850 4900
+Wire Wire Line
+	2500 4900 2500 5000
+Connection ~ 2500 5000
+Wire Wire Line
+	2500 5000 2850 5000
+Wire Wire Line
+	1950 4800 1950 5000
+Connection ~ 1950 5000
+Wire Wire Line
+	1950 5000 2500 5000
+Wire Wire Line
+	1400 4900 1400 5000
+Connection ~ 1400 5000
+Wire Wire Line
+	1400 5000 1950 5000
+$Comp
+L power:GND #PWR?
+U 1 1 5C75EF0F
+P 2850 5150
+F 0 "#PWR?" H 2850 4900 50  0001 C CNN
+F 1 "GND" H 2855 4977 50  0000 C CNN
+F 2 "" H 2850 5150 50  0001 C CNN
+F 3 "" H 2850 5150 50  0001 C CNN
+	1    2850 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 5000 2850 5150
+Connection ~ 2850 5000
 $EndSCHEMATC
