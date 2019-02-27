@@ -427,16 +427,9 @@ $EndComp
 Wire Wire Line
 	3250 3450 3250 3250
 Wire Wire Line
-	3250 2850 3250 2750
-Wire Wire Line
 	3250 2350 3250 2100
 Wire Wire Line
-	3250 2750 4000 2750
-Wire Wire Line
 	4000 2750 4000 2900
-Connection ~ 3250 2750
-Wire Wire Line
-	3250 2750 3250 2650
 $Comp
 L Connector:Conn_01x04_Male J3
 U 1 1 5C773E4C
@@ -498,4 +491,24 @@ Wire Wire Line
 	1150 2600 1250 2600
 Wire Wire Line
 	1250 2600 1250 2900
+Wire Wire Line
+	3250 2650 3250 2750
+$Comp
+L Device:R R5
+U 1 1 5C76BFEA
+P 3600 2750
+F 0 "R5" V 3393 2750 50  0000 C CNN
+F 1 "10k" V 3484 2750 50  0000 C CNN
+F 2 "" V 3530 2750 50  0001 C CNN
+F 3 "~" H 3600 2750 50  0001 C CNN
+	1    3600 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3750 2750 4000 2750
+Wire Wire Line
+	3450 2750 3250 2750
+Connection ~ 3250 2750
+Wire Wire Line
+	3250 2750 3250 2850
 $EndSCHEMATC
